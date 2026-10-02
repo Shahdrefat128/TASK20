@@ -16,7 +16,10 @@ let index = null
 // Create Phone
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-    
+    if(nameInput.value.trim() === ""){
+        alert("pleas enter mobile name");
+        return;
+    }
 
 const phone = {
     name: nameInput.value,
